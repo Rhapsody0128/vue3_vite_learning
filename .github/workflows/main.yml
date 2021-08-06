@@ -12,11 +12,6 @@ jobs:
       run: |
         yarn install
         yarn build
-        cd dist
-        git init
-        git add -A
-        git commit -m 'deploy'
-        git push -f git@github.com:Rhapsody0128/vue3_vite_learning.git master:gh-pages
         
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@4.1.4
