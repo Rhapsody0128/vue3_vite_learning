@@ -1,11 +1,10 @@
 <template lang="pug">
-#app
-  img(src="./assets/logo.png")
-  selfComponent(msg='selfComponent')
-  p Store.Name = {{name}}
-  router-link(to='/') Home | 
-  router-link(to='/about')  About
-  router-view
+img(src="./assets/logo.png")
+selfComponent(msg='selfComponent')
+p Store.Name = {{name}}
+router-link(to='/') Home | 
+router-link(to='/about')  About
+router-view
 
 </template>
 

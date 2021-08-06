@@ -17,8 +17,10 @@ const routes = [
   },
 ];
 
+const mainDirectory = "vue_vite_learning";
+
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(mainDirectory),
   routes,
 });
 
