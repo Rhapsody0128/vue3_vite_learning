@@ -7,26 +7,23 @@
 </template>
 
 <script setup>
-import { defineProps, reactive } from 'vue'
+import { defineProps, reactive } from "vue";
 
 defineProps({
-  msg: String
-})
+  msg: { type: String, default: "" },
+});
 
-const state = reactive(
-    { 
-      count: 0 
-    }
-  )
+const state = reactive({
+  count: 0,
+});
 </script>
 
 <script>
-
 // Vue2的寫法也可以
 
 // export default {
 //   props:{
-//     msg:String
+//     msg: {type:String,default:''}
 //   },
 //   data(){
 //     return {
