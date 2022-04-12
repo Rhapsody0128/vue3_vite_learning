@@ -1,27 +1,24 @@
 <template lang="pug">
-img(src="./assets/logo.png")
-selfComponent(msg='selfComponent')
-p Store.Name = {{name}}
-router-link(to='/') Home | 
-router-link(to='/about')  About
-router-view
+#app
+  img(src="./assets/logo.png")
+  selfComponent(msg='selfComponent')
+  p Store.Name = {{name}}
+  router-link(to='/') Home | 
+  router-link(to='/about')  About
+  router-view
 
 </template>
-
-<script setup>
-import selfComponent from "./components/selfComponent.vue";
-
-console.log("在script setup內的會在mounted之前被讀取");
-</script>
 <script>
+import selfComponent from "./components/selfComponent.vue";
 export default {
+  components: { selfComponent },
   data() {
     return {
       name: "None",
     };
   },
   mounted() {
-    console.log("在後面");
+    console.log(selfComponent);
     this.name = this.$store.state.name;
   },
 };

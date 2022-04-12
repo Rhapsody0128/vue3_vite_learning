@@ -1,0 +1,163 @@
+@import variables from "./varialbes.styl"
+
+
+
+.w100
+  width 100%
+.h100
+  height 100%
+.w75
+  width 75%
+.h75
+  height 75%
+.w50
+  width 50%
+.h50
+  height 50%
+.w25
+  width 25%
+.h25
+  height 25%
+
+
+// margin
+.m
+  margin $default !important
+.ml
+  margin-left $default !important
+.mt
+  margin-top $default !important
+.mb
+  margin-bottom $default !important
+.mr
+  margin-right $default !important
+  
+.m-l
+  margin $large !important
+.ml-l
+  margin-left $large !important
+.mt-l
+  margin-top $large !important
+.mb-l
+  margin-bottom $large !important
+.mr-l
+  margin-right $large !important
+
+.ma
+  margin auto
+
+
+// padding
+.p
+  padding $default !important
+.pl
+  padding-left $default !important
+.pt
+  padding-top $default !important
+.pb
+  padding-bottom $default !important
+.pr
+  padding-right $default !important
+
+
+.p-l
+  padding $large !important
+.pl-l
+  padding-left $large !important
+.pt-l
+  padding-top $large !important
+.pb-l
+  padding-bottom $large !important
+.pr-l
+  padding-right $large !important
+
+.pa
+  padding auto
+
+// text
+.t-center
+  text-align center
+
+.t-right
+  text-align right
+.t-left
+  text-align left
+
+
+.d-inlineBlock
+  display inline-block
+
+// flex
+.d-flex
+  display flex
+
+.no-wrap
+  @extend .d-flex
+  flex-wrap: nowrap !important
+
+.jc-center
+  @extend .d-flex
+  justify-content center
+.jc-start
+  @extend .d-flex
+  justify-content flex-start
+.jc-end
+  @extend .d-flex
+  justify-content flex-end
+.jc-around
+  @extend .d-flex
+  justify-content space-around
+.jc-between
+  @extend .d-flex
+  justify-content space-between
+.jc-evenly
+  @extend .d-flex
+  justify-content space-evenly
+
+.fd-row
+  @extend .d-flex
+  flex-direction row
+.fd-column
+  @extend .d-flex
+  flex-direction column
+.fd-row-reverse
+  @extend .d-flex
+  flex-direction row-reverse
+.fd-column-reverse
+  @extend .d-flex
+  flex-direction column-reverse
+
+
+.ai-center
+  @extend .d-flex
+  align-items center
+.ai-stretch
+  @extend .d-flex
+  align-items stretch
+.ai-start
+  @extend .d-flex
+  align-items flex-start
+.ai-end
+  @extend .d-flex
+  align-items flex-end
+
+// reset
+.p-0
+  padding 0 !important
+.m-0
+  margin 0 !important
+
+.cursor-pointer
+  cursor pointer
+
+
+
+// for test
+.r
+  background red
+.b
+  background blue
+.y
+  background yellow
+.bd
+  border 1rem solid black
